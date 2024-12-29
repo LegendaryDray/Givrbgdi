@@ -1,4 +1,4 @@
-getgenv().Haunts = {
+getgenv().External = {
     Options = {
         ["Notifications"] = true,
     },
@@ -123,20 +123,20 @@ getgenv().Haunts = {
 local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))();
 local Notify = AkaliNotif.Notify;
 
-if getgenv().Hauntsloaded == true then
-    if getgenv().Haunts.Options.Notifications == true then
+if getgenv(). Externalloaded == true then
+    if getgenv().External.Options.Notifications == true then
 
 Notify({
 Description = "Settings From Script Updated.";
-Title = "Haunts";
+Title = "External";
 Duration = 1.5;
 });
         return
     end
     end
-    getgenv().Hauntsloaded = true
+    getgenv().Externalloaded = true
     
-    if getgenv().Haunts.Options.Notifications == true then
+    if getgenv().External.Options.Notifications == true then
 
 Notify({
 Description = "Script Loading...";
@@ -349,7 +349,7 @@ Mouse.KeyDown:Connect(function(Key)
 local Notify = AkaliNotif.Notify;
 				Notify({
 Description = "Silent Disabled";
-Title = "Haunts";
+Title = "External";
 Duration = 1.5;
 });
 end 
@@ -361,7 +361,7 @@ end
 local Notify = AkaliNotif.Notify;
 				Notify({
 Description = "Silent Enabled";
-Title = "Haunts";
+Title = "External";
 Duration = 1.5;
 });
 end
